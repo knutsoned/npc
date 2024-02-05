@@ -10,5 +10,6 @@
   "license": "MIT",
   "dependencies": {
     "inkjs": "^2.2.2"
-  }
+  },
+  "type": "module"
 }

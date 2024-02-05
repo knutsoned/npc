@@ -1,3 +1,4 @@
+/*
 var Story = require('inkjs').Story
 var fs = require('fs')
 var readline = require('readline')
@@ -9,11 +10,18 @@ var inkFile = fs
 
 //create a new story
 var myStory = new Story(inkFile)
+*/
+import * as fs from 'fs'
+import Inkjs from 'inkjs' // import * as Inkjs.. does not work
+import * as readline from 'readline'
 
+const data = fs.readFileSync('../docs/ink/map.ink', 'UTF-8')
+
+const myStory = new Inkjs.Compiler(data).Compile()
 // console.dir(myStory)
 
 //start reading and writting to the console
-var rl = readline.createInterface({
+const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 })
@@ -33,8 +41,8 @@ function continueToNextChoice() {
   
   //check if there are choices
   if (myStory.currentChoices.length > 0) {
-    for (var i = 0; i < myStory.currentChoices.length; ++i) {
-      var choice = myStory.currentChoices[i]
+    for (let i = 0; i < myStory.currentChoices.length; ++i) {
+      const choice = myStory.currentChoices[i]
       console.log(i + 1 + '. ' + choice.text)
     }
 
