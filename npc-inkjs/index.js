@@ -1,16 +1,3 @@
-/*
-var Story = require('inkjs').Story
-var fs = require('fs')
-var readline = require('readline')
-
-//load the ink file
-var inkFile = fs
-  .readFileSync('../docs/ink/map.ink.json', 'UTF-8')
-  .replace(/^\uFEFF/, '')
-
-//create a new story
-var myStory = new Story(inkFile)
-*/
 import * as fs from 'fs'
 import Inkjs from 'inkjs' // import * as Inkjs.. does not work
 import * as readline from 'readline'
@@ -38,7 +25,7 @@ function continueToNextChoice() {
   }
 
   // console.dir(myStory, {depth: 4, colors: true})
-  
+
   //check if there are choices
   if (myStory.currentChoices.length > 0) {
     for (let i = 0; i < myStory.currentChoices.length; ++i) {
