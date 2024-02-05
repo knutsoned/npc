@@ -463,13 +463,29 @@
         "content": [
           "*-/=In Town=/-*",
           {
-            "divert": "kimFischerDeeMin"
+            "divert": "theSmithyMillMar"
           },
           {
             "pageNum": 2
           },
           {
-            "pageLabel": " The Town"
+            "pageLabel": "  The Town"
+          }
+        ]
+      },
+      "theSmithyMillMar": {
+        "content": [
+          "The smithy, mill, market, tavern, and assorted dwellings lay in ruin. Piles of greenish soot smolder in the edges and corners of the alleyways.",
+          {
+            "divert": "blankStitch"
+          }
+        ]
+      },
+      "blankStitch": {
+        "content": [
+          "",
+          {
+            "divert": "kimFischerDeeMin"
           }
         ]
       },
@@ -632,14 +648,6 @@
           }
         ]
       },
-      "balltholemewTemp": {
-        "content": [
-          "Balltholemew temporarily blinks out of existence and says \"I can't really think of a use for this either.\"",
-          {
-            "divert": "balltholemewThan"
-          }
-        ]
-      },
       "balltholemewTake": {
         "content": [
           "Balltholemew takes the hammer.",
@@ -648,6 +656,14 @@
           },
           {
             "flagName": "hammer taken"
+          }
+        ]
+      },
+      "balltholemewTemp": {
+        "content": [
+          "Balltholemew temporarily blinks out of existence and says \"I can't really think of a use for this either.\"",
+          {
+            "divert": "balltholemewThan"
           }
         ]
       },
