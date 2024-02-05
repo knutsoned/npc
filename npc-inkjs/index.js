@@ -29,6 +29,8 @@ function continueToNextChoice() {
     console.log(myStory.Continue())
   }
 
+  // console.dir(myStory, {depth: 4, colors: true})
+  
   //check if there are choices
   if (myStory.currentChoices.length > 0) {
     for (var i = 0; i < myStory.currentChoices.length; ++i) {
