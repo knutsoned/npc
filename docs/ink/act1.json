@@ -1,0 +1,715 @@
+{
+  "title": "NPC",
+  "data": {
+    "stitches": {
+      "insideTheTower": {
+        "content": [
+          "*-/=Inside the Tower=/-*",
+          {
+            "divert": "anotherBlissfulD"
+          },
+          {
+            "pageNum": 1
+          },
+          {
+            "pageLabel": "The Tower"
+          }
+        ]
+      },
+      "anotherBlissfulD": {
+        "content": [
+          "Another blissful day begins in the quiet village of Overdown. The morning hours of scheduled solitude pass gently and without remarkable difficulty. After some light mopping on the lower level of Shirinorin the Wizard’s tower and a quick tidying up in the summoning chamber, Balltholemew the lowly apprentice detects a faint shimmer in their peripheral vision.",
+          {
+            "divert": "aMagicalMirrorIs"
+          }
+        ]
+      },
+      "aMagicalMirrorIs": {
+        "content": [
+          "A magical mirror is mounted on the wall. A pot of begonias sits on a wooden table.",
+          {
+            "divert": "aDampSetOfClothi"
+          }
+        ]
+      },
+      "aDampSetOfClothi": {
+        "content": [
+          "A damp set of clothing is hanging from an iron brazier.",
+          {
+            "divert": "thereIsAStairwel"
+          },
+          {
+            "notIfCondition": "clothed"
+          }
+        ]
+      },
+      "thereIsAStairwel": {
+        "content": [
+          "There is a stairwell winding around the inside of the tower, leading up to the alchemy lab. The front door is locked.",
+          {
+            "option": "Go outside",
+            "linkPath": "theDoorIsLocked",
+            "ifConditions": null,
+            "notIfConditions": null
+          },
+          {
+            "option": "Go upstairs",
+            "linkPath": "balltholemewRoll",
+            "ifConditions": null,
+            "notIfConditions": null
+          },
+          {
+            "option": "Wear clothes",
+            "linkPath": "iPutOnMyRobeAndW",
+            "ifConditions": null,
+            "notIfConditions": [
+              {
+                "notIfCondition": "clothed"
+              }
+            ]
+          },
+          {
+            "option": "Look in the mirror",
+            "linkPath": "balltholemewIsAn",
+            "ifConditions": null,
+            "notIfConditions": null
+          }
+        ]
+      },
+      "theDoorIsLocked": {
+        "content": [
+          "The door is locked.",
+          {
+            "divert": "aDistantWailBeco"
+          }
+        ]
+      },
+      "aDistantWailBeco": {
+        "content": [
+          "A distant wail becomes louder, closer. It feels like it’s coming out of every object, every surface. The faint shimmer becomes a strong glow. The ground shakes and everything not magically secured instantly flies up into the air, then falls. It seems like a faint voice coming from the pot of begonias says \"surely you must be joking.\" Balltholemew rolls into the wall and is dazed.",
+          {
+            "divert": "theStaircaseIsIn"
+          }
+        ]
+      },
+      "theStaircaseIsIn": {
+        "content": [
+          "The staircase is inexplicably twisted and completely impassable. The locked door has been torn asunder.",
+          {
+            "option": "Go outside",
+            "linkPath": "theNearbyVillage",
+            "ifConditions": null,
+            "notIfConditions": null
+          },
+          {
+            "option": "Eh, maybe we’d better wait a bit",
+            "linkPath": "theWorldOutsideT",
+            "ifConditions": null,
+            "notIfConditions": null
+          },
+          {
+            "pageNum": -1
+          }
+        ]
+      },
+      "balltholemewRoll": {
+        "content": [
+          "Balltholemew rolls toward the staircase.",
+          {
+            "divert": "aDistantWailBeco"
+          }
+        ]
+      },
+      "iPutOnMyRobeAndW": {
+        "content": [
+          "I put on my robe and wizard hat.",
+          {
+            "divert": "aMagicalMirrorIs"
+          },
+          {
+            "flagName": "clothed"
+          }
+        ]
+      },
+      "balltholemewIsAn": {
+        "content": [
+          "Balltholemew is an anthropomorphic crystal ball with floating white gloved hands.",
+          {
+            "divert": "theyAreAsNakedAs"
+          }
+        ]
+      },
+      "theyAreAsNakedAs": {
+        "content": [
+          "They are as naked as the day they were conjured.",
+          {
+            "divert": "theyAreWearingAR"
+          },
+          {
+            "notIfCondition": "clothed"
+          }
+        ]
+      },
+      "theyAreWearingAR": {
+        "content": [
+          "They are wearing a robe and wizard hat.",
+          {
+            "divert": "whenTheyWishToCo"
+          },
+          {
+            "ifCondition": "clothed"
+          }
+        ]
+      },
+      "whenTheyWishToCo": {
+        "content": [
+          "When they wish to convey they are blinking, they temporarily blink completely out of existence.",
+          {
+            "divert": "thereIsAStairwel"
+          }
+        ]
+      },
+      "theNearbyVillage": {
+        "content": [
+          "The nearby village of Overdown erupts in a ball of green flame.",
+          {
+            "divert": "greenFlame"
+          }
+        ]
+      },
+      "greenFlame": {
+        "content": [
+          "*-Green flame!-*",
+          {
+            "divert": "theEntranceToThe"
+          }
+        ]
+      },
+      "theEntranceToThe": {
+        "content": [
+          "The entrance to the tower magically repairs and locks itself behind Balltholemew.",
+          {
+            "divert": "thereIsACampToTh"
+          }
+        ]
+      },
+      "thereIsACampToTh": {
+        "content": [
+          "There is a camp to the east of *-/=The Tower of Shirinorin=/-* and an allée to Merriment Forest in the south.",
+          {
+            "option": "Head east",
+            "linkPath": "theCampIsDeserte",
+            "ifConditions": null,
+            "notIfConditions": null
+          },
+          {
+            "option": "Enter the forest",
+            "linkPath": "itIsVeryDarkTheF",
+            "ifConditions": null,
+            "notIfConditions": null
+          }
+        ]
+      },
+      "theWorldOutsideT": {
+        "content": [
+          "The world outside the broken door abruptly flashes green. Compelled by the eerie eruption, Balltholemew rolls through the doorway, which immediately and magically repairs and locks itself.",
+          {
+            "divert": "thereIsACampToTh"
+          }
+        ]
+      },
+      "theCampIsDeserte": {
+        "content": [
+          "The camp is deserted. Horns of mead litter the ground, their last drops seeping into the soil. Rusty scraps of armor and shreds of bright colored clothing have been carelessly discarded. A lone guard blocks the entrance to the barracks.",
+          {
+            "divert": "thereAreMountain"
+          }
+        ]
+      },
+      "thereAreMountain": {
+        "content": [
+          "There are mountains in the east. The town of Overdown is just over the hill to the south of *-/=The Hero Camp=/-*. The warped Tower of Shirinorin remains in the west.",
+          {
+            "option": "Head east",
+            "linkPath": "theMajesticFlatb",
+            "ifConditions": null,
+            "notIfConditions": null
+          },
+          {
+            "option": "Go to town",
+            "linkPath": "inTown",
+            "ifConditions": null,
+            "notIfConditions": null
+          },
+          {
+            "option": "Go west",
+            "linkPath": "thereIsACampToTh",
+            "ifConditions": null,
+            "notIfConditions": null
+          },
+          {
+            "option": "Talk to the guard",
+            "linkPath": "theGuardGlaresMe",
+            "ifConditions": null,
+            "notIfConditions": [
+              {
+                "notIfCondition": "talked to hero guard"
+              }
+            ]
+          }
+        ]
+      },
+      "itIsVeryDarkTheF": {
+        "content": [
+          "It is very dark. The forest is likely to be generated by a procedure.",
+          {
+            "divert": "theTownOfOverdow"
+          }
+        ]
+      },
+      "theTownOfOverdow": {
+        "content": [
+          "The town of Overdown is directly east of *-/=Merriment Forest=/-*. The shores of Lake Inferior lie to the south. The twisted Tower of Shirinorin is due north.",
+          {
+            "option": "Go north",
+            "linkPath": "thereIsACampToTh",
+            "ifConditions": null,
+            "notIfConditions": null
+          },
+          {
+            "option": "Head east",
+            "linkPath": "inTown",
+            "ifConditions": null,
+            "notIfConditions": null
+          },
+          {
+            "option": "Hop in the lake",
+            "linkPath": "balltholemewCant",
+            "ifConditions": null,
+            "notIfConditions": null
+          }
+        ]
+      },
+      "theMajesticFlatb": {
+        "content": [
+          "The majestic *-/=Flatbush Mountains=/-* sprawl before Balltholemew. The subterranean mines beyond the collapsed entrance are likely to be generated by a procedure.",
+          {
+            "divert": "aRingOfPowerGlin"
+          }
+        ]
+      },
+      "aRingOfPowerGlin": {
+        "content": [
+          "A -4 Ring of Power glints in the haze near the foot of the nearest mountain. It seems unbelievably simple to be able to just walk in and pick it up like this, but here we are.",
+          {
+            "divert": "aVillageToTheSou"
+          },
+          {
+            "notIfCondition": "ring taken"
+          }
+        ]
+      },
+      "aVillageToTheSou": {
+        "content": [
+          "A village to the south is populated by goblins and orcs who have made it painstakingly clear that Balltholemew is not welcome there. There is a camp directly west.",
+          {
+            "option": "Go west",
+            "linkPath": "thereAreMountain",
+            "ifConditions": null,
+            "notIfConditions": null
+          },
+          {
+            "option": "Take the precious",
+            "linkPath": "thisSeemsLikeAnE",
+            "ifConditions": null,
+            "notIfConditions": [
+              {
+                "notIfCondition": "ring taken"
+              }
+            ]
+          }
+        ]
+      },
+      "theGuardGlaresMe": {
+        "content": [
+          "The guard glares menacingly and refuses to talk.",
+          {
+            "divert": "thereAreMountain"
+          },
+          {
+            "flagName": "talked to hero guard"
+          }
+        ]
+      },
+      "balltholemewCant": {
+        "content": [
+          "Balltholemew can't swim and all the available boats have been scattered along the shore. None of them are seaworthy.",
+          {
+            "divert": "merrimentForestI"
+          }
+        ]
+      },
+      "merrimentForestI": {
+        "content": [
+          "Merriment Forest is up north and there is a camp to the east of *-/=Lake Inferior=/-*.",
+          {
+            "option": "Back to the forest",
+            "linkPath": "theTownOfOverdow",
+            "ifConditions": null,
+            "notIfConditions": null
+          },
+          {
+            "option": "Investigate the camp",
+            "linkPath": "theCampIsSurroun",
+            "ifConditions": null,
+            "notIfConditions": null
+          }
+        ]
+      },
+      "thisSeemsLikeAnE": {
+        "content": [
+          "This seems like an extremely bad idea so let's do it.",
+          {
+            "divert": "theMajesticFlatb"
+          },
+          {
+            "flagName": "ring taken"
+          }
+        ]
+      },
+      "theCampIsSurroun": {
+        "content": [
+          "The camp is surrounded by a purple aura that Balltholemew may neither pass nor see beyond.",
+          {
+            "divert": "theShoresOfLakeI"
+          }
+        ]
+      },
+      "theShoresOfLakeI": {
+        "content": [
+          "The shores of Lake Inferior lie to the west of *-/=The Villain Camp=/-*. The town of Overdown is up the valley in the north. The ruins of a castle can be found due east.",
+          {
+            "option": "Return to the lake",
+            "linkPath": "merrimentForestI",
+            "ifConditions": null,
+            "notIfConditions": null
+          },
+          {
+            "option": "Explore the castle",
+            "linkPath": "theRuinsOfTheOnc",
+            "ifConditions": null,
+            "notIfConditions": null
+          },
+          {
+            "option": "Go to town",
+            "linkPath": "inTown",
+            "ifConditions": null,
+            "notIfConditions": null
+          }
+        ]
+      },
+      "theRuinsOfTheOnc": {
+        "content": [
+          "The ruins of the once great *-/=Elsinore Castle=/-* stand before Balltholemew. Unlike the rest of the surrounding area, the castle was destroyed long ago. A dungeon below the castle is likely to be generated by a procedure.",
+          {
+            "divert": "aHelmOfWaterWalk"
+          }
+        ]
+      },
+      "aHelmOfWaterWalk": {
+        "content": [
+          "A +2 Helm of Water Walking dangles from a hook on the remnants of the outer gate.",
+          {
+            "divert": "aVillageToTheNor"
+          },
+          {
+            "notIfCondition": "helm taken"
+          }
+        ]
+      },
+      "aVillageToTheNor": {
+        "content": [
+          "A village to the north of /=*-Elsinore Castle-*=/ is populated by goblins and orcs who have made it painstakingly clear that Balltholemew is not welcome there. There is a camp directly west.",
+          {
+            "option": "Go west",
+            "linkPath": "theShoresOfLakeI",
+            "ifConditions": null,
+            "notIfConditions": null
+          },
+          {
+            "option": "Take the helm",
+            "linkPath": "balltholemewPick",
+            "ifConditions": null,
+            "notIfConditions": [
+              {
+                "notIfCondition": "helm taken"
+              }
+            ]
+          }
+        ]
+      },
+      "balltholemewPick": {
+        "content": [
+          "Balltholemew picks up the helm but, being an anthropomorphic crystal ball, can not walk on water or otherwise and has no use for it.",
+          {
+            "divert": "aVillageToTheNor"
+          },
+          {
+            "flagName": "helm taken"
+          }
+        ]
+      },
+      "inTown": {
+        "content": [
+          "*-/=In Town=/-*",
+          {
+            "divert": "kimFischerDeeMin"
+          },
+          {
+            "pageNum": 2
+          },
+          {
+            "pageLabel": " The Town"
+          }
+        ]
+      },
+      "kimFischerDeeMin": {
+        "content": [
+          "Kim Fischer, Dee Minor, and Jan Barderton stand in the middle of the square, visibly shaken.",
+          {
+            "option": "Talk to Fischer",
+            "linkPath": "balltholemewWhat",
+            "ifConditions": null,
+            "notIfConditions": [
+              {
+                "notIfCondition": "talked to fischer"
+              }
+            ]
+          },
+          {
+            "option": "Talk to Minor",
+            "linkPath": "balltholemewWere",
+            "ifConditions": null,
+            "notIfConditions": [
+              {
+                "notIfCondition": "talked to minor"
+              }
+            ]
+          },
+          {
+            "option": "Talk to Barderton",
+            "linkPath": "balltholemewIDon",
+            "ifConditions": null,
+            "notIfConditions": [
+              {
+                "notIfCondition": "talked to barderton"
+              }
+            ]
+          },
+          {
+            "option": "Freak the complete eff out",
+            "linkPath": "balltholemewExpl",
+            "ifConditions": null,
+            "notIfConditions": null
+          },
+          {
+            "option": "Find someone who will perform a quest in exchange for an item",
+            "linkPath": "theGameBeginsInE",
+            "ifConditions": [
+              {
+                "ifCondition": "talked to fischer"
+              },
+              {
+                "ifCondition": "talked to minor"
+              },
+              {
+                "ifCondition": "talked to barderton"
+              }
+            ],
+            "notIfConditions": null
+          }
+        ]
+      },
+      "balltholemewWhat": {
+        "content": [
+          "\"Balltholemew! What a relief to see you! You just missed an epic struggle between the forces of good and evil and now our whole town is destroyed. I can't do my basic thing that makes me happy, which is climbing into a boat and catching fish, because all the ships are wrecked now. One of the heroes dropped this +3 Short Sword. I don't know much about melee combat, but perhaps you could find a use for it? Here, put it in your.. er.. um.. wherever it is that you keep things.\"",
+          {
+            "option": "Take the sword",
+            "linkPath": "balltholemewPuts",
+            "ifConditions": null,
+            "notIfConditions": null
+          },
+          {
+            "option": "Politely decline",
+            "linkPath": "balltholemewTemp",
+            "ifConditions": null,
+            "notIfConditions": null
+          }
+        ]
+      },
+      "balltholemewWere": {
+        "content": [
+          "\"Balltholemew! We're in the soup now! Once the shock wears off, I suppose I'll start constructing metal fortifications using the forge, once we can get it repaired. Hopefully by the time the Hero and Villain are ready to square off again, our impenetrable defenses will lead them to take their quarrel elsewhere. In the mean time, I happened to be holding this +1 Engineer's Hammer when our town exploded in a ball of green flame a moment ago. I can only use regular hammers and the smithy is in pretty rough shape, too rough to be used for storing enchanted hammers. Perhaps you can find a good home for it?\"",
+          {
+            "option": "Take the hammer",
+            "linkPath": "balltholemewTake",
+            "ifConditions": null,
+            "notIfConditions": null
+          },
+          {
+            "option": "Politely decline",
+            "linkPath": "balltholemewTemp1",
+            "ifConditions": null,
+            "notIfConditions": null
+          }
+        ]
+      },
+      "balltholemewIDon": {
+        "content": [
+          "\"Balltholemew! I don't have much time as I need to compose an epic saga about the battle that happened like 5 minutes ago and set it to song immediately. Unfortunately my lyre strings are all broken so I doubt I'll get very far. You could do me a solid tho and take this -2 Leprechaun Flute off my hands. It's been nothing but trouble!\"",
+          {
+            "option": "Take the flute",
+            "linkPath": "balltholemewTake1",
+            "ifConditions": null,
+            "notIfConditions": null
+          },
+          {
+            "option": "Politely decline",
+            "linkPath": "balltholemewTemp2",
+            "ifConditions": null,
+            "notIfConditions": null
+          }
+        ]
+      },
+      "balltholemewExpl": {
+        "content": [
+          "Balltholemew explodes into a mist. The particles begin to coalesce, first into droplets, then smaller balls which fall to the ground. They converge on a central point and Balltholemew is whole again.",
+          {
+            "divert": "kimFischerDeeMin"
+          }
+        ]
+      },
+      "theGameBeginsInE": {
+        "content": [
+          "The game begins in earnest. The Player (Balltholemew, Fischer, Minor, or Barderton) must collect enchanted or cursed items, which will be attractive to either the Hero or the Villain respectively. These items can be given as rewards for performing various quests which may simply keep the Hero and/or Villain occupied, buying time for the town to be repaired and fortified.",
+          {
+            "divert": "thePlayerIsUnabl"
+          }
+        ]
+      },
+      "thePlayerIsUnabl": {
+        "content": [
+          "The Player is unable to equip the items directly and may only use them to assign quests. The Hero or Villain performing a quest may cause environmental effects like landslides and flooding. They may cause the next battle to be staged somewhere other than Overdown.",
+          {
+            "divert": "thereMayBeOtherC"
+          }
+        ]
+      },
+      "thereMayBeOtherC": {
+        "content": [
+          "There may be other class-specific ways to tip the scales, but beware! If the Villain is ready for war and the Hero isn't, they will simply take over the town. Likewise, if the Hero regains strength while the Villain is still vulnerable, they will quickly dispatch the Villain and throw a wild party in the tavern which will be three times as destructive as the actual battle. The only ways to win are to successfully fortify the town before the next battle, or ensure it happens far, far away."
+        ]
+      },
+      "balltholemewPuts": {
+        "content": [
+          "Balltholemew puts the sword in.. um.. eh.. Balltholemew picks up the sword at any rate.",
+          {
+            "divert": "balltholemewThan"
+          },
+          {
+            "flagName": "sword taken"
+          }
+        ]
+      },
+      "balltholemewThan": {
+        "content": [
+          "Balltholemew thanks Fischer kindly.",
+          {
+            "divert": "kimFischerDeeMin"
+          },
+          {
+            "flagName": "talked to fischer"
+          }
+        ]
+      },
+      "balltholemewTemp": {
+        "content": [
+          "Balltholemew temporarily blinks out of existence and says \"I can't really think of a use for this either.\"",
+          {
+            "divert": "balltholemewThan"
+          }
+        ]
+      },
+      "balltholemewTake": {
+        "content": [
+          "Balltholemew takes the hammer.",
+          {
+            "divert": "balltholemewThan1"
+          },
+          {
+            "flagName": "hammer taken"
+          }
+        ]
+      },
+      "balltholemewThan1": {
+        "content": [
+          "Balltholemew thanks Minor kindly.",
+          {
+            "divert": "kimFischerDeeMin"
+          },
+          {
+            "flagName": "talked to minor"
+          }
+        ]
+      },
+      "balltholemewTake1": {
+        "content": [
+          "Balltholemew takes the flute.",
+          {
+            "divert": "balltholemewThan2"
+          },
+          {
+            "flagName": "flute taken"
+          }
+        ]
+      },
+      "balltholemewTemp1": {
+        "content": [
+          "Balltholemew temporarily blinks out of existence and says \"I can't really think of a use for this either.\"",
+          {
+            "divert": "balltholemewThan1"
+          }
+        ]
+      },
+      "balltholemewThan2": {
+        "content": [
+          "Balltholemew thanks Barderton kindly.",
+          {
+            "divert": "kimFischerDeeMin"
+          },
+          {
+            "flagName": "talked to barderton"
+          }
+        ]
+      },
+      "balltholemewTemp2": {
+        "content": [
+          "Balltholemew temporarily blinks out of existence and says \"I can't really think of a use for this either.\"",
+          {
+            "divert": "balltholemewThan2"
+          }
+        ]
+      }
+    },
+    "initial": "insideTheTower",
+    "optionMirroring": true,
+    "allowCheckpoints": false,
+    "editorData": {
+      "playPoint": "kimFischerDeeMin",
+      "libraryVisible": false,
+      "authorName": "Ed Knutson",
+      "textSize": 0
+    }
+  },
+  "url_key": 191989
+}
