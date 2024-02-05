@@ -1,0 +1,16 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  inkjs:
+    specifier: ^2.2.2
+    version: 2.2.2
+
+packages:
+
+  /inkjs@2.2.2:
+    resolution: {integrity: sha512-SSI054diwSr7rwe6cIMAR8eJu3WVhrwhLEYVsgR0OjqE2Jt22mG1zej236fXSM7ofzQWsQfFfvfeDa881RjKpQ==}
+    dev: false

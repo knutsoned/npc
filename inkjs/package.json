@@ -1,0 +1,14 @@
+{
+  "name": "npc-inkjs",
+  "version": "1.0.0",
+  "description": "Load an ink file into inkjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ed Knutson",
+  "license": "MIT",
+  "dependencies": {
+    "inkjs": "^2.2.2"
+  }
+}
