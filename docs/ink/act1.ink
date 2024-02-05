@@ -5,16 +5,16 @@
 # author: Ed Knutson
 // -----------------------------
 
-VAR clothed = false
-VAR talked_to_hero_guard = false
-VAR ring_taken = false
-VAR helm_taken = false
-VAR sword_taken = false
-VAR hammer_taken = false
-VAR flute_taken = false
-VAR talked_to_fischer = false
-VAR talked_to_minor = false
-VAR talked_to_barderton = false
+VAR clothed = false // player flag
+VAR talked_to_hero_guard = false // actor flag
+VAR ring_taken = false // player flag
+VAR helm_taken = false // player flag
+VAR sword_taken = false // player flag
+VAR hammer_taken = false // player flag
+VAR flute_taken = false // player flag
+VAR talked_to_fischer = false // actor flag
+VAR talked_to_minor = false // actor flag
+VAR talked_to_barderton = false // actor flag
 
 -> The_Tower
 

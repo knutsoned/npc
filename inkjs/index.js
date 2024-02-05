@@ -4,11 +4,13 @@ var readline = require('readline')
 
 //load the ink file
 var inkFile = fs
-  .readFileSync('../docs/ink/act1.ink.json', 'UTF-8')
+  .readFileSync('../docs/ink/map.ink.json', 'UTF-8')
   .replace(/^\uFEFF/, '')
 
 //create a new story
 var myStory = new Story(inkFile)
+
+// console.dir(myStory)
 
 //start reading and writting to the console
 var rl = readline.createInterface({
