@@ -185,6 +185,8 @@ Balltholemew picks up the helm but, being an anthropomorphic crystal ball, can n
 
 ==== The_Town ====
 <strong><em>In Town</em></strong>
+The smithy, mill, market, tavern, and assorted dwellings lay in ruin. Piles of greenish soot smolder in the edges and corners of the alleyways.
+
     -> kimFischerDeeMin
 
 = kimFischerDeeMin
@@ -236,14 +238,14 @@ Balltholemew puts the sword in.. um.. eh.. Balltholemew picks up the sword at an
   ~ sword_taken = true
     -> balltholemewThan
 
-= balltholemewTemp
-Balltholemew temporarily blinks out of existence and says "I can't really think of a use for this either."
-    -> balltholemewThan
-
 = balltholemewTake
 Balltholemew takes the hammer.
   ~ hammer_taken = true
     -> balltholemewThan1
+
+= balltholemewTemp
+Balltholemew temporarily blinks out of existence and says "I can't really think of a use for this either."
+    -> balltholemewThan
 
 = balltholemewTake1
 Balltholemew takes the flute.
