@@ -1,0 +1,3 @@
+[submodule "tsd-template-ex-dot-boom"]
+	path = tsd-template-ex-dot-boom
+	url = https://github.com/knutsoned/tsd-template-ex-dot-boom.git
