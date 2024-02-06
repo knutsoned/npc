@@ -1,4 +1,4 @@
-import * as fs from 'fs'
+import fs from 'fs'
 import Inkjs from 'inkjs' // import * as Inkjs.. does not work
 import * as readline from 'readline'
 
