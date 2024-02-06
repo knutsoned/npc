@@ -3,6 +3,10 @@
 import { boom } from 'boom.boom';
 import * as utils from '../modules/utils';
 
+import Inkjs from '../modules/ink/ink';
+
+import inkData from '../modules/ink/map';
+
 interface Game {
 	this: void;
 	readonly __mainAtlas: hash;
@@ -11,6 +15,8 @@ interface Game {
 export function init(this: Game): void {
 	// Create properties that can be set in the editor.
 	go.property('mainAtlas', resource.atlas());
+
+	const inkStory = new Inkjs.Compiler(inkData).Compile();
 
 	// Run all game logic inside `boom`.
 	boom(() => {
