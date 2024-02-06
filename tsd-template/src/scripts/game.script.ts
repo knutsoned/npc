@@ -3,9 +3,7 @@
 import { boom } from 'boom.boom';
 import * as utils from '../modules/utils';
 
-import Inkjs from '../modules/ink/ink';
-
-import inkData from '../modules/ink/map';
+import { createContainer } from 'brandi';
 
 interface Game {
 	this: void;
@@ -16,7 +14,8 @@ export function init(this: Game): void {
 	// Create properties that can be set in the editor.
 	go.property('mainAtlas', resource.atlas());
 
-	const inkStory = new Inkjs.Compiler(inkData).Compile();
+	// set up DI
+	const ctx = createContainer();
 
 	// Run all game logic inside `boom`.
 	boom(() => {
