@@ -1,6 +1,7 @@
 /** @noSelfInFile **/
 
 import { boom } from 'boom.boom';
+import * as Ex from '../modules/ex-dot/src';
 import * as utils from '../modules/utils';
 
 interface Game {
@@ -11,6 +12,25 @@ interface Game {
 export function init(this: Game): void {
 	// Create properties that can be set in the editor.
 	go.property('mainAtlas', resource.atlas());
+
+	const sloth: Ex.Prit.Sprite = {};
+
+	// Initialize Ex. structure (cartridge)
+	interface Actor extends Ex.It.Object {
+		start: {
+			x: number;
+			y: number;
+		};
+		sprite: Ex.Prit.Sprite;
+	}
+
+	let exPlayer: Actor = {
+		start: {
+			x: 120,
+			y: 80,
+		},
+		sprite: sloth,
+	};
 
 	// Run all game logic inside `boom`.
 	boom(() => {
